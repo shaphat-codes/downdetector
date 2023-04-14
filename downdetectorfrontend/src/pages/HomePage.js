@@ -39,7 +39,7 @@ const HomePage = () => {
         e.preventDefault()
         setLoaded(false)
         setLoading(true)
-           let response =  await fetch('http://127.0.0.1:8000/check/', {
+           let response =  await fetch('https://ghdowndetector.onrender.com/check/', {
                method: "POST",
                credentials: "include",
                headers: {
@@ -68,7 +68,7 @@ const HomePage = () => {
        let getStatuses = async ()=> {
     
     
-        let response =  await fetch(`http://127.0.0.1:8000/detect/`, {
+        let response =  await fetch(`https://ghdowndetector.onrender.com/detect/`, {
             method: "GET",
             credentials: "include",
             headers: {
